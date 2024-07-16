@@ -1,0 +1,24 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyMan66/IQ-test-app.git"
+  },
+  "keywords": [
+    "iq",
+    "test",
+    "spa"
+  ],
+  "author": "Diana Lipanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinyMan66/IQ-test-app/issues"
+  },
+  "homepage": "https://github.com/TinyMan66/IQ-test-app#readme"
+}
