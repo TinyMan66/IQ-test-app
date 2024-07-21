@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /*font-family: Arial, sans-serif;*/
+    overflow: hidden;
+    min-width: 375px;
+    min-height: 667px;
+}
+
+nav {
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    background-color: #181818;
+    color: white;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    justify-content: center;
+}
+.menu-toggle .img {
+    width: 24px;
+    height: 16px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.menu.open {
+    transform: translateY(0);
+}
+.buttonContainer {
+    align-self: flex-end;
+    padding: 18px 12px  0 0;
+    margin-bottom: 60px;
+}
+.closeButton {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.closeButton img {
+    width: 28px;
+    height: 28px;
+    top: 18px;
+    color: #FFC700;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 23px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    color: #F4CE0C;
+}
+.menu a:active {
+    color: #DADADA;
+
+}
+
+.menu a:focus {
+    outline: none;
+}
+#app {
+    padding: 4rem 1rem 1rem 1rem;
+}
