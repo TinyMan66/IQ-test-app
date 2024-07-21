@@ -1,19 +1,20 @@
 body, html {
     margin: 0;
     padding: 0;
-    /*font-family: Arial, sans-serif;*/
     overflow: hidden;
-    min-width: 375px;
-    min-height: 667px;
+    width: 100vw;
+    height: 100vh;
 }
 
 nav {
+    top: 0;
+    left: 0;
     position: fixed;
     height: 46px;
     width: 100%;
-    background-color: #181818;
+    background-color: #272727;
     color: white;
-    padding-left: 8px;
+    padding: 2px 0 0 15px;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -23,6 +24,7 @@ nav {
     cursor: pointer;
     justify-content: center;
 }
+
 .menu-toggle .img {
     width: 24px;
     height: 16px;
@@ -47,23 +49,27 @@ nav {
 .menu.open {
     transform: translateY(0);
 }
-.buttonContainer {
+
+.button-container {
     align-self: flex-end;
-    padding: 18px 12px  0 0;
+    padding: 18px 12px 0 0;
     margin-bottom: 60px;
 }
-.closeButton {
+
+.close-btn {
     all: unset;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.closeButton img {
+
+.close-btn img {
     width: 28px;
     height: 28px;
     top: 18px;
     color: #FFC700;
 }
+
 .menu a {
     color: white;
     text-decoration: none;
@@ -75,17 +81,97 @@ nav {
     padding-bottom: 27px;
     text-transform: uppercase;
 }
+
 .menu a:hover {
     color: #F4CE0C;
 }
-.menu a:active {
-    color: #DADADA;
 
+.menu a:active {
+    color: #696969;
 }
 
 .menu a:focus {
     outline: none;
 }
+
+.main {
+    background-image: url('assets/images/background_theme.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /*height: 100vh;*/
+    height: calc(100vh - 46px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 46px;
+}
+
+.description {
+    font-family: PT Serif, serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.test-title {
+    font-family: Yeseva One, serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFC700;
+    text-transform: uppercase;
+    padding: 0 62px;
+    letter-spacing: 0.03em;
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 189px;
+    min-height: 41px;
+    border-radius: 20px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+    color: #0D0C11;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Merriweather, serif;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+}
+
+span {
+    font-family: PT Serif, serif;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0 27px;
+}
+
+.yellow-text {
+    color: #FFC700;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
 #app {
-    padding: 4rem 1rem 1rem 1rem;
+    width: 100%;
+    height: calc(100% - 46px);
+    margin-top: 46px;
 }
