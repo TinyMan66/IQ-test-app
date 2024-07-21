@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IQ-test Page</title>
+    <title>IQ Test SPA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#" data-link="main">Главная</a></li>
-            <li><a href="#" data-link="info">Информация о тесте</a></li>
-            <li><a href="#" data-link="test">Пройти тест</a></li>
-        </ul>
-    </nav>
-</header>
-<div id="content"></div>
-<footer>
-    <p>© 2024 IQ-test Page</p>
-</footer>
-<script src="router.js"></script>
-<script src="app.js"></script>
+<nav>
+    <div class="menu-toggle" id="menu-toggle">
+        <img src="assets/icons/navBar.svg" alt="menu icon">
+    </div>
+    <div class="menu" id="menu">
+        <div class="buttonContainer">
+            <button class="closeButton">
+                <img src="assets/icons/close.svg" alt="close icon">
+            </button>
+        </div>
+        <a href="#" data-page="home">Главная</a>
+        <a href="#" data-page="about">Информация о тесте</a>
+        <a href="#" data-page="test">Пройти тест</a>
+    </div>
+</nav>
+<div id="app"></div>
+<script type="module" src="app.js"></script>
 </body>
 </html>
-
