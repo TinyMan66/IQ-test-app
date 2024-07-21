@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const app = document.getElementById('app');
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
-    const closeButton = document.querySelector('.closeButton');
+    const closeButton = document.querySelector('.close-btn');
 
     const routes = {
         home: loadHome,
