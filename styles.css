@@ -221,7 +221,6 @@ footer {
     overflow: hidden;
     transition: bottom 0.5s ease, overflow 0.5s ease;
 }
-
 .footer-content {
     padding: 10px 20px;
     height: 100%;
@@ -232,7 +231,18 @@ footer {
     line-height: 24px;
     letter-spacing: 0.05em;
     text-align: left;
+    padding: 40px 15px;
+}
 
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-page img{
+    width: 250px;
+    height: 232px;
 }
 .test-description strong {
     text-transform: uppercase;
