@@ -1,6 +1,5 @@
 export function loadHome(app) {
     app.innerHTML = `
-   
     <div class="main">
     <span class="description">Пройдите точный и быстрый </span>
     <h1 class="test-title">Тест на определение IQ </h1>
@@ -13,5 +12,28 @@ export function loadHome(app) {
     <span>Подробнее</span>
     </div>
     </div>
+    <footer>
+    <div class="footer-content">
+        " Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта, но и выработать список рекомендаций для повышения этого показателя. "
+    </div>
+</footer>
   `;
+    const moreInfoBtn = document.querySelector('.more-info-btn');
+    const footer = document.querySelector('footer');
+
+    const toggleFooter = () => {
+        const isExpanded = footer.style.bottom === '0px';
+        footer.style.bottom = isExpanded ? '-100px' : '0px';
+    };
+
+    moreInfoBtn.addEventListener('click', toggleFooter);
+
+    document.addEventListener('click', (event) => {
+        if (!footer.contains(event.target) && !moreInfoBtn.contains(event.target)) {
+            footer.style.bottom = '-100px';
+        }
+    });
+
+    footer.addEventListener('click', (event) => event.stopPropagation());
+    moreInfoBtn.addEventListener('click', (event) => event.stopPropagation());
 }
