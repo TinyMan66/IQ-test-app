@@ -8,4 +8,10 @@ export function loadAbout(app) {
         <button class="btn test-btn">Пройти тест</button>
     </div>
   `;
+    const testButton = document.querySelector('.test-btn');
+
+    testButton.addEventListener('click', async () => {
+        const { loadTest } = await import('./testPage.js');
+        loadTest(document.getElementById('app'));
+    });
 }
