@@ -100,14 +100,14 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    /*height: 100vh;*/
-    height: calc(100vh - 46px);
+    height: calc(100vh - 46px - 70px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 46px;
+    padding-bottom: 12px;
 }
 .main img {
     width: 200px;
@@ -122,7 +122,6 @@ nav {
     text-align: center;
     color: #FFFFFF;
     padding-top: 27px;
-    /*padding-bottom: 20px;*/
     width: 100%;
     height: 100%;
 }
@@ -134,7 +133,6 @@ nav {
     text-align: center;
     color: #FFC700;
     text-transform: uppercase;
-    /*padding: 0 62px;*/
     letter-spacing: 0.03em;
     width: 252px;
     height: 73px;
@@ -187,13 +185,14 @@ span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .more-info-btn {
     all: unset;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .more-info-btn img {
     width: 16px;
@@ -208,7 +207,25 @@ span {
     color: #FFFFFF;
 ;
 }
+footer {
+    background-color: #1d50ad;
+    color: #fff;
+    font-family: Yeseva One, serif;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    transition: bottom 0.5s ease, overflow 0.5s ease;
+}
 
+.footer-content {
+    padding: 10px 20px;
+    height: 100%;
+}
 #app {
     width: 100%;
     height: calc(100% - 46px);
