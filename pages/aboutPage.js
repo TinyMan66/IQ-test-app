@@ -5,6 +5,7 @@ export function loadAbout(app) {
         вашего типа</strong> <strong class="bold">интеллекта</strong> <strong>сферы деятельности</strong>, которая принесет вам скорейший финансовый результат.
         </p>
         <img src="../assets/images/brain_2.png" alt="brain picture">
+        <button class="btn test-btn">Пройти тест</button>
     </div>
   `;
 }
