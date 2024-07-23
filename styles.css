@@ -226,6 +226,20 @@ footer {
     padding: 10px 20px;
     height: 100%;
 }
+.test-description {
+    font-family: PT Serif, serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+}
+.test-description strong {
+    text-transform: uppercase;
+}
+.test-description .bold {
+    text-transform: lowercase;
+}
 #app {
     width: 100%;
     height: calc(100% - 46px);
