@@ -295,7 +295,11 @@ footer {
     letter-spacing: 0.05em;
     text-align: left;
     padding: 35px 15px;
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
+}
+.test-info-btn {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF
 }
 #app {
     width: 100%;

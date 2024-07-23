@@ -7,6 +7,7 @@ export function loadTest(app) {
         <p class="test-info-second">
         Профессиональная интерпретация и детально <strong>проработанные рекомендации</strong> позволят вам качественно <strong>изменить все аспекты своей жизни</strong>: от финансового до любовного.
         </p>
+        <button class="btn test-info-btn">Пройти тест</button>
     </div>
   `;
 }
