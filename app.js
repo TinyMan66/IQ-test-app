@@ -4,9 +4,6 @@ import { loadTest } from './pages/testPage.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     const app = document.getElementById('app');
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    const closeButton = document.querySelector('.close-btn');
 
     const routes = {
         home: loadHome,
@@ -25,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const page = event.target.getAttribute('data-page');
             history.pushState({ page }, '', `#${page}`);
             navigateTo(page);
-            menu.classList.remove('open');
-            menuToggle.style.display = 'block';
         }
     }
 
@@ -35,18 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     document.body.addEventListener('click', onNavClick);
-
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('open');
-        if (menu.classList.contains('open')) {
-            menuToggle.style.display = 'none';
-        }
-    });
-
-    closeButton.addEventListener('click', function() {
-        menu.classList.remove('open');
-        menuToggle.style.display = 'block';
-    });
 
     // Initial load
     const initialPage = location.hash.replace('#', '') || 'home';
