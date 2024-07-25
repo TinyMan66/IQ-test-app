@@ -117,10 +117,23 @@ function startTest() {
         answersContainer.innerHTML = '';
 
         if (questionData.answers) {
-            questionData.answers.forEach(answer => {
+            questionData.answers.forEach((answer, i) => {
                 const answerElement = document.createElement('div');
                 answerElement.classList.add('answer');
-                answerElement.textContent = answer;
+
+                const radioInput = document.createElement('input');
+                radioInput.type = 'radio';
+                radioInput.name = 'answer';
+                radioInput.value = answer;
+                radioInput.id = `answer-${i}`;
+
+                const label = document.createElement('label');
+                label.htmlFor = `answer-${i}`;
+                label.textContent = answer;
+
+                answerElement.appendChild(radioInput);
+                answerElement.appendChild(label);
+
                 answersContainer.appendChild(answerElement);
             });
         }
