@@ -351,9 +351,25 @@ footer {
     border-radius: 10px;
     background-color: #3BDE7C;
 }
+.test-question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.question {
+    font-family: PT Serif, sans-serif ;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FFFFFF;
+    word-wrap: normal;
+    white-space: pre-wrap
+}
 .test-question img {
-    display: block;
-    /*max-width: 100%;*/
     max-width: 185px;
     height: 235px;
     margin-top: 20px;
@@ -395,7 +411,8 @@ footer {
     color: #FFFFFF;
     font-family: PT Serif, serif;
     font-size: 18px;
-    line-height: 58px;
+    /*line-height: 58px;*/
+    word-wrap: normal;
     letter-spacing: 0.05em;
     text-align: left;
     cursor: pointer;
@@ -414,6 +431,16 @@ footer {
     width: 100%;
     padding-bottom: 100%;
     cursor: pointer;
+}
+.next-btn {
+    background-color: #dadada;
+    color: #b2b2b2;
+    box-shadow: 0 4px 10px 0 #00000040 inset;
+    margin-bottom: 30px;
+}
+.next-btn:hover {
+    background-color: #ffc702;
+    color: #0d0c11;
 }
 #app {
     width: 100%;

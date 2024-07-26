@@ -25,13 +25,14 @@ const questions = [
         question: "Выберите лишнее:",
         answers: ["Дом", "Шалаш", "Бунгало", "Скамейка", "Хижина"],
     },{
-        question: "Продолжите числовой ряд: 18  20  24  32",
+        question: "Продолжите числовой ряд:\n" +
+            " 18  20  24  32  ",
         answers: ["62", "48", "74", "57", "60", "77"],
     },{
         question: "Выберите цвет, который сейчас наиболее Вам приятен:",
         color: ["#a8a8a8", "#0b00a9", "#00a701", "#f60200","#fdff17", "#a95404", "#000000", "#850068", "#45b2ab"],
     },{
-        question: "Отдохните пару секунд, еще раз Выберите цвет, который сейчас наиболее Вам приятен:",
+        question: "Отдохните пару секунд, еще раз выберите цвет, который сейчас наиболее Вам приятен:",
         color: ["#a8a8a8", "#45b2ab", "#a95404", "#00a701","#000000", "#f60200", "#850068", "#fdff17", "#0b00a9"],
     },{
         question: "Какой из городов лишний?",
@@ -105,7 +106,7 @@ function startTest() {
         const answersContainer = document.querySelector('.test-answers');
 
         const questionData = questions[index];
-        questionContainer.innerHTML = `<h2>${questionData.question}</h2>`;
+        questionContainer.innerHTML = `<span class="question">${questionData.question}</span>`;
 
         if (questionData.picture) {
             const img = document.createElement('img');
