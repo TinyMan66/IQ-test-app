@@ -366,7 +366,7 @@ footer {
     width: 100%;
     height: 100%;
 }
-.test-answers .answer {
+.answer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -374,6 +374,9 @@ footer {
     width: 100%;
     height: 50px;
     opacity: 85%;
+}
+.answer.selected {
+    background-color: #ffc702;
 }
 .test-answers input {
     appearance: none;
@@ -386,7 +389,7 @@ footer {
     cursor: pointer;
 }
 .test-answers input:checked {
-    background-color: #2950c2 !important; /* цвет индикатора выбора */
+    background-color: #2950c2 !important;
 }
 .test-answers label {
     color: #FFFFFF;

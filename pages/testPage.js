@@ -162,5 +162,13 @@ function startTest() {
 
     nextButton.addEventListener('click', handleNextButtonClick);
 
+    document.addEventListener('change', function(event) {
+        if (event.target.matches('input[type="radio"]')) {
+            const labels = document.querySelectorAll('.test-answers .answer');
+            labels.forEach(label => label.classList.remove('selected'));
+            event.target.parentNode.classList.add('selected');
+        }
+    });
+
     renderQuestion(currentQuestionIndex);
 }
